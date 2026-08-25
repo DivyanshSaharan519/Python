@@ -1,0 +1,5 @@
+print("\n--- Task 10: Modulus Edge Cases ---")
+print("10 % 3 =", 10 % 3)
+print("-10 % 3 =", -10 % 3)
+print("10 % -3 =", 10 % -3)
+print("-10 % -3 =", -10 % -3)

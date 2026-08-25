@@ -1,0 +1,5 @@
+print("\n--- Task 8: Subtraction Edge Cases ---")
+print("10 - 5 =", 10 - 5)
+print("10 - (-5) =", 10 - (-5))
+print("-10 - 5 =", -10 - 5)
+print("-10 - (-5) =", -10 - (-5))
