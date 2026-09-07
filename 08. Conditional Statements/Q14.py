@@ -8,5 +8,7 @@ elif marks >= 60:
     print("Average")
 elif marks >= 40:
     print("Below Average")
+elif marks >= 33:
+    print("Pass")
 else:
     print("Fail")
