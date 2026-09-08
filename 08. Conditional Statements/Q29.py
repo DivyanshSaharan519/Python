@@ -5,4 +5,4 @@ has_ticket = input("Do you have a ticket? (True/False): ")
 if is_student == "True" and has_id == "True" and has_ticket == "True":
     print("Allowed")
 else:
-    print("Not Allowed")    
+    print("Not Allowed")
