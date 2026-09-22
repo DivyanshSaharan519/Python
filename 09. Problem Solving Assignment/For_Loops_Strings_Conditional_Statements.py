@@ -186,4 +186,46 @@ print("no of items in Budget price is:",budget_count)
 print("no of items in regular price is:",regular_count)             
 print("no of items in premium price is:",premium_count)             
 print("no of items in luxury price is:",luxury_count)    
-print("Average product price is:",avg)         
+print("Average product price is:",avg)    
+
+#9. Character Position Chellange
+string=input("Enter paragraph:")
+position=0
+vowel_count=consonant_count=digit_count=specialchar_count=0
+for i in string:
+    print("character is:",i,"there position is:",position,end=" ")
+    position+=1
+    if position%2==0:
+        print("position is even",end=" ")
+    else:
+        print("position is odd",end=" ")
+    if i in "AEIOUaeiou":
+        vowel_count+=1
+        print("and character is vowel")
+    elif i not in "AEIOUaeiou":
+        consonant_count+=1    
+        print("and character is consonant")
+    elif chr(48)<=i<=chr(57):
+        digit_count+=1  
+        print("and character is digit")
+    else:
+        specialchar_count+=1  
+        print("and character is special")
+print("in string vowel is:",vowel_count)              
+print("in string consonant is:",consonant_count)              
+print("in string digit is:",digit_count)              
+print("in string special character is:",specialchar_count)
+
+#10. Number Pattern With Conditions
+n=int(input("Enter number of rows:"))
+for i in range(n):
+    for j in range(i+1):
+        if (j+1)%3==0 and (j+1)%5==0:
+            print("Z",end="")
+        elif (j+1)%3==0:
+            print("X",end="") 
+        elif (j+1)%5==0:
+            print("Y",end="") 
+        else:   
+            print(j+1,end="")
+    print()
