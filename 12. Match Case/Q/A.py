@@ -602,3 +602,418 @@ match status:
 
 #Topic 9 — More Challenging Problems
 #Q31
+banking = int(input("Enter banking type: "))
+
+match banking:
+    case 1:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Personal Balance Selected")
+            case 2:
+                print("Personal Transfer Selected")
+            case 3:
+                print("Personal Loan Selected")
+            case _:
+                print("Invalid Option")
+
+    case 2:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Business Balance Selected")
+            case 2:
+                print("Payroll Selected")
+            case 3:
+                print("Business Loan Selected")
+            case _:
+                print("Invalid Option")
+
+    case _:
+        print("Invalid Banking Type")
+
+
+#Q32
+role = int(input("Enter role: "))
+
+match role:
+    case 1:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Student Marks")
+            case 2:
+                print("Opening Student Attendance")
+            case 3:
+                print("Opening Student Homework")
+            case _:
+                print("Invalid Student Option")
+
+    case 2:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Entering Marks")
+            case 2:
+                print("Opening Teacher Attendance")
+            case 3:
+                print("Assigning Homework")
+            case _:
+                print("Invalid Teacher Option")
+
+    case 3:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Child Marks")
+            case 2:
+                print("Opening Child Attendance")
+            case 3:
+                print("Contacting Teacher")
+            case _:
+                print("Invalid Parent Option")
+
+    case _:
+        print("Invalid Role")
+
+
+#Q33
+transport = int(input("Enter transport: "))
+
+match transport:
+    case 1:
+        option = int(input("Enter class: "))
+        match option:
+            case 1:
+                print("Flight Economy Selected")
+            case 2:
+                print("Flight Business Selected")
+            case _:
+                print("Invalid Flight Class")
+
+    case 2:
+        option = int(input("Enter class: "))
+        match option:
+            case 1:
+                print("Train Sleeper Selected")
+            case 2:
+                print("Train AC Selected")
+            case _:
+                print("Invalid Train Class")
+
+    case 3:
+        option = int(input("Enter class: "))
+        match option:
+            case 1:
+                print("Bus Ordinary Selected")
+            case 2:
+                print("Bus Volvo Selected")
+            case _:
+                print("Invalid Bus Class")
+
+    case _:
+        print("Invalid Transport")
+
+
+#Q34
+choice = int(input("Enter choice: "))
+
+match choice:
+    case 1:
+        print("Starting Game")
+    case 2:
+        print("Loading Game")
+    case 3:
+        setting = int(input("1. Sound\n2. Graphics\n3. Controls\nEnter setting: "))
+        match setting:
+            case 1:
+                print("Sound Settings Opened")
+            case 2:
+                print("Graphics Settings Opened")
+            case 3:
+                print("Controls Settings Opened")
+            case _:
+                print("Invalid Setting")
+    case 4:
+        print("Exiting Game")
+    case _:
+        print("Invalid Choice")
+
+
+#Topic 10 — Challenge Problems
+#Q35
+category = int(input("Enter category: "))
+
+match category:
+    case 1:
+        item = int(input("Enter item: "))
+        match item:
+            case 1:
+                print("Soup Selected")
+            case 2:
+                print("Spring Roll Selected")
+            case 3:
+                print("Garlic Bread Selected")
+            case _:
+                print("Invalid Starter")
+
+    case 2:
+        item = int(input("Enter item: "))
+        match item:
+            case 1:
+                print("Pizza Selected")
+            case 2:
+                print("Pasta Selected")
+            case 3:
+                print("Biryani Selected")
+            case _:
+                print("Invalid Main Course")
+
+    case 3:
+        item = int(input("Enter item: "))
+        match item:
+            case 1:
+                print("Ice Cream Selected")
+            case 2:
+                print("Cake Selected")
+            case 3:
+                print("Gulab Jamun Selected")
+            case _:
+                print("Invalid Dessert")
+
+    case 4:
+        item = int(input("Enter item: "))
+        match item:
+            case 1:
+                print("Coffee Selected")
+            case 2:
+                print("Tea Selected")
+            case 3:
+                print("Juice Selected")
+            case _:
+                print("Invalid Drink")
+
+    case _:
+        print("Invalid Category")
+
+
+#Q36
+payment = int(input("Enter payment type: "))
+
+match payment:
+    case 1:
+        option = int(input("1. Scan QR\n2. Enter UPI ID\nEnter option: "))
+        match option:
+            case 1:
+                print("Scan QR Selected")
+            case 2:
+                print("Enter UPI ID Selected")
+            case _:
+                print("Invalid UPI Option")
+
+    case 2:
+        option = int(input("1. Credit Card\n2. Debit Card\nEnter option: "))
+        match option:
+            case 1:
+                print("Credit Card Selected")
+            case 2:
+                print("Debit Card Selected")
+            case _:
+                print("Invalid Card Option")
+
+    case 3:
+        option = int(input("1. Add Money\n2. Pay Using Wallet\nEnter option: "))
+        match option:
+            case 1:
+                print("Add Money Selected")
+            case 2:
+                print("Pay Using Wallet Selected")
+            case _:
+                print("Invalid Wallet Option")
+
+    case _:
+        print("Invalid Payment Type")
+
+
+#37
+category = int(input("Enter category: "))
+
+match category:
+    case 1:
+        course = int(input("Enter course: "))
+        match course:
+            case 1:
+                print("Python Selected")
+            case 2:
+                print("Java Selected")
+            case 3:
+                print("C++ Selected")
+            case _:
+                print("Invalid Programming Course")
+
+    case 2:
+        course = int(input("Enter course: "))
+        match course:
+            case 1:
+                print("Algebra Selected")
+            case 2:
+                print("Calculus Selected")
+            case 3:
+                print("Statistics Selected")
+            case _:
+                print("Invalid Mathematics Course")
+
+    case 3:
+        course = int(input("Enter course: "))
+        match course:
+            case 1:
+                print("English Selected")
+            case 2:
+                print("Presentation Selected")
+            case 3:
+                print("Interview Skills Selected")
+            case _:
+                print("Invalid Communication Course")
+
+    case _:
+        print("Invalid Category")
+
+
+#Q38
+choice = int(input("Enter option: "))
+
+match choice:
+    case 1:
+        option = int(input("1. Start\n2. Stop\nEnter option: "))
+        match option:
+            case 1:
+                print("Engine Started")
+            case 2:
+                print("Engine Stopped")
+            case _:
+                print("Invalid Engine Option")
+
+    case 2:
+        option = int(input("1. Headlights\n2. Indicators\n3. Hazard Lights\nEnter option: "))
+        match option:
+            case 1:
+                print("Headlights Selected")
+            case 2:
+                print("Indicators Selected")
+            case 3:
+                print("Hazard Lights Selected")
+            case _:
+                print("Invalid Light Option")
+
+    case 3:
+        option = int(input("1. Play\n2. Pause\n3. Next\n4. Previous\nEnter option: "))
+        match option:
+            case 1:
+                print("Music Playing")
+            case 2:
+                print("Music Paused")
+            case 3:
+                print("Next Song")
+            case 4:
+                print("Previous Song")
+            case _:
+                print("Invalid Music Option")
+
+    case 4:
+        option = int(input("1. Start Navigation\n2. Stop Navigation\nEnter option: "))
+        match option:
+            case 1:
+                print("Navigation Started")
+            case 2:
+                print("Navigation Stopped")
+            case _:
+                print("Invalid Navigation Option")
+
+    case _:
+        print("Invalid Choice")
+
+
+#Topic 11 — Mixed Logic Challenge
+#Q39
+role = int(input("Enter role: "))
+
+match role:
+    case 1:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Employee Profile")
+            case 2:
+                days = int(input("Enter leave days: "))
+                if days > 0:
+                    print("Leave Request Submitted")
+                else:
+                    print("Invalid Leave Days")
+            case 3:
+                print("Opening Employee Salary")
+            case _:
+                print("Invalid Employee Option")
+
+    case 2:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Team")
+            case 2:
+                print("Approving Leave")
+            case 3:
+                print("Opening Reports")
+            case _:
+                print("Invalid Manager Option")
+
+    case _:
+        print("Invalid Role")
+
+
+role = int(input("Enter role: "))
+
+match role:
+    case 1:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Student Profile")
+            case 2:
+                print("Opening Student Marks")
+            case 3:
+                print("Opening Student Attendance")
+            case 4:
+                print("Opening Student Courses")
+            case _:
+                print("Invalid Student Option")
+
+    case 2:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Teacher Students")
+            case 2:
+                print("Opening Enter Marks")
+            case 3:
+                print("Opening Teacher Attendance")
+            case 4:
+                print("Opening Teacher Courses")
+            case _:
+                print("Invalid Teacher Option")
+
+    case 3:
+        option = int(input("Enter option: "))
+        match option:
+            case 1:
+                print("Opening Fees")
+            case 2:
+                print("Opening Admissions")
+            case 3:
+                print("Opening Notices")
+            case 4:
+                print("Opening Departments")
+            case _:
+                print("Invalid Administration Option")
+
+    case _:
+        print("Invalid Role")
