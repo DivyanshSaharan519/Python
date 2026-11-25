@@ -3,29 +3,29 @@
 
 # 1. Create a function with a local variable city and print it.
 
-# def city():
-#     city = "Jodhpur"
-#     print(city)
-# city()
+def city():
+    city = "Jodhpur"
+    print(city)
+city()
 
 # 2. Create a global variable school. Read it inside a function.
 
-# school = "Vidhyashram International School"
-# def school_name():
-#     print(school)
-# school_name()
+school = "Vidhyashram International School"
+def school_name():
+    print(school)
+school_name()
 
 # 3. Assign a variable inside an if block and print it outside the block.
 
-# if True:
-#     name = "praveen"
-# print(name)
+if True:
+    name = "praveen"
+print(name)
 
 # 4. Use a for loop to assign a loop variable. Print it after the loop.
 
-# for i in range(5):
-#     print(i)
-# print("After loop:", i)
+for i in range(5):
+    print(i)
+print("After loop:", i)
 
 # 5. Explain the difference between scope and lifetime in your own words.
 
@@ -38,12 +38,12 @@
 
 # 6. Predict the output:
 
-# value = 100
-# def test():
-#     value = 200
-#     print(value)
-# test()
-# print(value)
+value = 100
+def test():
+    value = 200
+    print(value)
+test()
+print(value)
 
 # output==>200
 #          100
@@ -51,25 +51,25 @@
 # 7. Fix this code so it increments the global variable:
 
 # INCORRECT CODE:
-# clicks = 0
-# def click():
-#     clicks += 1
+clicks = 0
+def click():
+    clicks += 1
 
 # CORRECT CODE:
-# clicks = 0
-# def click():
-#     global clicks
-#     clicks += 1
-# click()
-# print(clicks)
+clicks = 0
+def click():
+    global clicks
+    clicks += 1
+click()
+print(clicks)
 
 # 8. Explain why this code raises an error:
 
-# name = "Asha"
-# def show():
-#     print(name)
-#     name = "Ravi"
-# show()
+name = "Asha"
+def show():
+    print(name)
+    name = "Ravi"
+show()
 
 # Answer: The error occurs because 'name' is used before assigning a value inside the function.
 # Python treats it as a local variable, causing an UnboundLocalError.
@@ -77,20 +77,20 @@
 
 # 9. Write a nested function that reads a variable from its enclosing function.
 
-# def outer():
-#     x = 10
-#     def inner():
-#         print(x)
-#     inner()
-# outer()
+def outer():
+    x = 10
+    def inner():
+        print(x)
+    inner()
+outer()
 
 # 10. Write a function that returns a list. Show that the returned list can be changed by the caller.
 
-# def get_list():
-#     return [1, 2, 3]
-# list = get_list()
-# list.append(4)
-# print(list)
+def get_list():
+    return [1, 2, 3]
+list = get_list()
+list.append(4)
+print(list)
  
 # Output==>[1, 2, 3, 4]
 
@@ -100,17 +100,17 @@
 
 # 11. Use nonlocal to create a counter that returns 1, 2, 3 across three calls.
 
-# def make_counter():
-#     count=0
-#     def increment():
-#         nonlocal count
-#         count+=1
-#         return count
-#     return increment
-# counter=make_counter()
-# print(counter())
-# print(counter())
-# print(counter())
+def make_counter():
+    count=0
+    def increment():
+        nonlocal count
+        count+=1
+        return count
+    return increment
+counter=make_counter()
+print(counter())
+print(counter())
+print(counter())
 
 # Output==>1
 #          2
@@ -118,16 +118,16 @@
 
 # 12. Predict the output: python
 
-# x=1
-# def outer():
-#     x=2
-#     def inner():
-#         x=3
-#         print(x)
-#     inner()
-#     print(x)
-# outer()
-# print(x)
+x=1
+def outer():
+    x=2
+    def inner():
+        x=3
+        print(x)
+    inner()
+    print(x)
+outer()
+print(x)
 
 # Output==>3
 #          2
@@ -143,13 +143,13 @@
 
 # 14. Create a function that returns another function. Explain which variable remains available and why.
 
-# def outer():
-#     name = "Asha"
-#     def inner():
-#         print(name)
-#     return inner
-# my_function = outer()
-# my_function()
+def outer():
+    name = "Asha"
+    def inner():
+        print(name)
+    return inner
+my_function = outer()
+my_function()
 
 # The variable name remains available because the inner function remembers the variable from the outer function.
 # This is called a closure.
